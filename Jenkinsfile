@@ -17,12 +17,12 @@ pipeline {
             }
         }
 
-        // stage('Stop Old Container') {
-        //     steps {
-        //         sh 'docker stop jenkins-web-container || true'
-        //         sh 'docker rm jenkins-web-container || true'
-        //     }
-        // }
+        stage('Stop Old Container') {
+            steps {
+                sh 'docker stop jenkins-web-container || true'
+                sh 'docker rm jenkins-web-container || true'
+            }
+        }
 
         stage('Run New Container') {
             steps {
