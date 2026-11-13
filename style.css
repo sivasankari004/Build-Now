@@ -518,8 +518,13 @@ footer p {
         width: 92%;
     }
 
-   
+    section {
+        padding: 65px 0;
+    }
 
+    .hero {
+        min-height: 550px;
+    }
 
     .property-grid,
     .category-grid,
