@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXORA | Luxury Real Estate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="container">
+        <a class="logo" href="#">LUXORA<span>.</span></a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn nav-btn">Get In Touch</a>
+        <button class="menu" id="menu">☰</button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+            <span class="eyebrow">EXCLUSIVE REAL ESTATE</span>
+            <h1>Find Your Perfect Place To Call Home.</h1>
+            <p>Discover exceptional properties, luxurious homes and beautiful spaces designed around the way you want to live.</p>
+            <a href="#properties" class="btn">Explore Properties →</a>
+        </div>
+    </div>
+</section>
+
+<!-- SEARCH -->
+<div class="container">
+    <div class="search-box">
+        <select id="type">
+            <option value="all">All Property Types</option>
+            <option value="Villa">Villa</option>
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+        </select>
+
+        <select id="budget">
+            <option value="all">Any Budget</option>
+            <option value="10000000">Under ₹1 Crore</option>
+            <option value="20000000">Under ₹2 Crore</option>
+        </select>
+
+        <select id="bedrooms">
+            <option value="all">Any Bedrooms</option>
+            <option value="2">2 Bedrooms</option>
+            <option value="3">3 Bedrooms</option>
+            <option value="4">4 Bedrooms</option>
+        </select>
+
+        <button class="btn" id="searchBtn">Search Properties</button>
+    </div>
+</div>
+
+<!-- PROPERTIES -->
+<section id="properties">
+    <div class="container">
+        <div class="heading">
+            <span>OUR PROPERTIES</span>
+            <h2>Featured Properties</h2>
+            <p>Explore carefully selected properties for your dream lifestyle.</p>
+        </div>
+
+        <div class="property-grid" id="propertyGrid">
+
+            <div class="property-card" data-type="Villa" data-price="8500000" data-bed="3">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800" alt="Luxury villa">
+                    <span class="label">FOR SALE</span>
+                </div>
+                <div class="property-info">
+                    <h3>Modern Luxury Villa</h3>
+                    <p class="location">⌖ ECR, Chennai</p>
+                    <div class="price">₹85 Lakhs</div>
+                    <div class="details">
+                        <span>🛏 3 Beds</span>
+                        <span>🛁 3 Baths</span>
+                        <span>2400 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="view-btn">Enquire Now →</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="Apartment" data-price="6500000" data-bed="2">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800" alt="Luxury apartment">
+                    <span class="label">FOR SALE</span>
+                </div>
+                <div class="property-info">
+                    <h3>Premium City Apartment</h3>
+                    <p class="location">⌖ Anna Nagar, Chennai</p>
+                    <div class="price">₹65 Lakhs</div>
+                    <div class="details">
+                        <span>🛏 2 Beds</span>
+                        <span>🛁 2 Baths</span>
+                        <span>1400 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="view-btn">Enquire Now →</a>
+                </div>
+            </div>
+
+            <div class="property-card" data-type="House" data-price="15000000" data-bed="4">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Luxury house">
+                    <span class="label">FOR SALE</span>
+                </div>
+                <div class="property-info">
+                    <h3>Contemporary Family Home</h3>
+                    <p class="location">⌖ OMR, Chennai</p>
+                    <div class="price">₹1.5 Crore</div>
+                    <div class="details">
+                        <span>🛏 4 Beds</span>
+                        <span>🛁 4 Baths</span>
+                        <span>3200 Sq.ft</span>
+                    </div>
+                    <a href="#contact" class="view-btn">Enquire Now →</a>
+                </div>
+            </div>
+
+        </div>
+        <p id="noResults">No properties match your filters.</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="container about-grid">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=900" alt="Elegant home interior">
+        </div>
+
+        <div class="about-text">
+            <span class="eyebrow">ABOUT LUXORA</span>
+            <h2>We Make Finding Your Dream Home Simple.</h2>
+            <p>At Luxora, we believe a home is more than just a property. It is where your future begins. We help customers discover spaces that match their lifestyle and aspirations.</p>
+            <p>Our focus is on professional service, transparency and a smooth property discovery experience.</p>
+
+            <div class="features">
+                <div><span>✦</span> Trusted Guidance</div>
+                <div><span>✦</span> Premium Properties</div>
+                <div><span>✦</span> Expert Support</div>
+                <div><span>✦</span> Client Focused</div>
+            </div>
+
+            <a href="#contact" class="btn">Know More →</a>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+    <div class="container">
+        <div class="heading">
+            <span>EXPLORE BY CATEGORY</span>
+            <h2>Find Your Property Type</h2>
+            <p>Choose the property that fits your lifestyle.</p>
+        </div>
+
+        <div class="category-grid">
+            <div class="category category-one"><h3>Luxury Houses</h3></div>
+            <div class="category category-two"><h3>Apartments</h3></div>
+            <div class="category category-three"><h3>Luxury Villas</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+    <div class="container stats-grid">
+        <div><h3>250+</h3><p>Properties Listed</p></div>
+        <div><h3>180+</h3><p>Happy Customers</p></div>
+        <div><h3>12+</h3><p>Years Experience</p></div>
+        <div><h3>25+</h3><p>Expert Agents</p></div>
+    </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+    <div class="container">
+        <div class="heading">
+            <span>TESTIMONIALS</span>
+            <h2>What Our Clients Say</h2>
+        </div>
+        <div class="quote">
+            "The team made finding our dream home an enjoyable experience. Their professionalism and attention to detail were excellent."
+        </div>
+        <div class="client">— Priya Sharma, Home Buyer</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="heading">
+            <span>CONTACT US</span>
+            <h2>Let's Find Your Dream Home</h2>
+            <p>Have questions? Our team is ready to help.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Get In Touch With Our Team.</h2>
+                <p>Tell us what you are looking for. We will help you explore suitable property options.</p>
+                <p>✉ hello@luxora.com</p>
+                <p>☎ +91 98765 43210</p>
+                <p>⌖ Chennai, Tamil Nadu, India</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" placeholder="Your Email Address" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" placeholder="Tell us about your property requirements..." required></textarea>
+                <button class="btn" type="submit">Submit Enquiry →</button>
+                <p id="formMessage"></p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <a class="logo" href="#">LUXORA<span>.</span></a>
+    <p>© <span id="year"></span> Luxora Real Estate. All Rights Reserved.</p>
+    <p>Designed for better living.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
